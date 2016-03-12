@@ -11,3 +11,7 @@ The script allows us to quickly install Minecraft server.
 ```bash
 ./mc_server_manager.sh start
 ```
+### for reinstall
+```bash
+./mc_server_manager.sh reinstall
+```
