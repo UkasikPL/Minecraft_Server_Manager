@@ -19,3 +19,7 @@ git clone https://github.com/UkasikPL/Minecraft_Server_Manager.git
 ```bash
 ./mc_server_manager.sh reinstall
 ```
+### for uninstall
+```bash
+./mc_server_manager.sh uninstall
+```
