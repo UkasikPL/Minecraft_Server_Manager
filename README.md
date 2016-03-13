@@ -18,23 +18,23 @@ The script allows us to quickly install Minecraft server.
 ```
 ## INSTALLATION
 ####Make sure you have installed git
-```git
+```{r, engine='bash', count_lines}
 git clone https://github.com/UkasikPL/Minecraft_Server_Manager.git
 ```
 ## USAGE
 ### for install
-```bash
+```{r, engine='bash', count_lines}
 ./mc_server_manager.sh
 ```
 ### for start server
-```bash
+```{r, engine='bash', count_lines}
 ./mc_server_manager.sh start
 ```
 ### for reinstall
-```bash
+```{r, engine='bash', count_lines}
 ./mc_server_manager.sh reinstall
 ```
 ### for uninstall
-```bash
+```{r, engine='bash', count_lines}
 ./mc_server_manager.sh uninstall
 ```
