@@ -38,3 +38,4 @@ git clone https://github.com/UkasikPL/Minecraft_Server_Manager.git
 ```{r, engine='bash', count_lines}
 ./mc_server_manager.sh uninstall
 ```
+##### Script created by Kacper Łukasik
