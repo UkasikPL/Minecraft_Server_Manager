@@ -2,6 +2,20 @@
 ## INFO
 This script is created for private servers or local servers based on Linux.
 The script allows us to quickly install Minecraft server.
+## CHANGLELOG
+0.1A
+```
+- Add to git
+```
+0.2A
+```
+- Add reinstall
+```
+0.3A
+```
+- Add uninstall
+- Fix Syntax
+```
 ## INSTALLATION
 ####Make sure you have installed git
 ```git
