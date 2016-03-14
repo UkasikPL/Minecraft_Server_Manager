@@ -8,16 +8,19 @@ DW_PATH="http://getspigot.org/jenkins/job/CraftBukkit/lastSuccessfulBuild/artifa
 
 INSTALL_DIR="src"
 
+# Dont changle values below
 MAX_RAM="1024"
 A="-Xmx"
 B="M"
 
+# Installation dir creation
 function createdir {
 	if [ ! -e $INSTALL_DIR ]; then
 		mkdir $INSTALL_DIR
 	fi
 }
 
+# Downloading bukkit jar
 function downloadjar {
 	if [ ! -e "$INSTALL_DIR/craftbukkit-1.9.jar" ]; then
 		cd $INSTALL_DIR
@@ -26,6 +29,7 @@ function downloadjar {
 	fi
 }
 
+# Add eulu to installation dir and set it value to true
 function addeula 
 {
 	if [ ! -e "$INSTALL_DIR/elua.txt" ]; then
@@ -33,6 +37,7 @@ function addeula
 	fi
 }
 
+# Reinstall
 function reinstall {
 	rm -r $INSTALL_DIR
 	createdir
@@ -41,6 +46,7 @@ function reinstall {
 	echo -e "\e[92mReinstall successful !\e[0m"
 }
 
+# Uninstall
 function uninstall {
 	if [ -e $INSTALL_DIR ]; then
 		rm -r $INSTALL_DIR
@@ -48,6 +54,7 @@ function uninstall {
 	fi
 }
 
+# Start server function
 function startserver {
 	echo "====================================="
 	read -p "Set the amount of RAM [MB]: " MAX_RAM
@@ -56,6 +63,7 @@ function startserver {
 	java "$A$MAX_RAM$B" -jar craftbukkit-1.9.jar -o true
 }
 
+# Launch function
 createdir
 downloadjar
 addeula
